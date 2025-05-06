@@ -551,7 +551,7 @@ computeOhdsiBenchmarkMetrics <- function(exportFolder,
                                          comparative = FALSE) {
   errorMessages <- checkmate::makeAssertCollection()
   checkmate::assertCharacter(exportFolder, len = 1, add = errorMessages)
-  checkmate::assertNumeric(mdrr, len = 1, add = errorMessages)
+  # checkmate::assertNumeric(mdrr, len = 1, add = errorMessages)
   checkmate::assertAtomic(stratum, len = 1, add = errorMessages)
   checkmate::assertAtomic(trueEffectSize, len = 1, add = errorMessages)
   checkmate::assertLogical(calibrated, len = 1, add = errorMessages)
